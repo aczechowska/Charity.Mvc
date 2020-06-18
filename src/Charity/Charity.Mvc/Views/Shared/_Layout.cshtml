@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Strona gówna";
+}
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    @await Html.PartialAsync("_HeadPartial")
+</head>
+<body>
+    @await Html.PartialAsync("_NavigationPartial")
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>
+        @await Html.PartialAsync("_FooterPartial")
+    </footer>
+
+    @await Html.PartialAsync("_ScriptsPartial")
+
+</body>
+</html>
